@@ -1,0 +1,44 @@
+Bubbling and Capturing -- Look up for the differences between they
+https://www.w3schools.com/jsref/met_element_addeventlistener.asp
+
+
+https://www.w3schools.com/jsref/jsref_replace.asp
+
+RegExp JS - Reference
+
+https://www.w3schools.com/jsref/jsref_obj_regexp.asp
+
+g - Perform a global match (find all matches rather than stopping after the first match)
+  /\D/g
+
+\D - non-digit
+
+\d - digit 0 - 9
+
+(/(\d{3})(\d)/, "$1.$2") 
+  - encontre o padrao de "um grupo de 3 digitos" seguido de "mais outro digito"
+(\d{3}) - grupo de captura 1 - 
+  $1 representa o primeiro grupo
+(\d) - grupo de captura 2
+  $2 representa o segundo grupo
+
+separe os grupos de captura por um '.'
+
+(/\d{3}(\d{1,2})/, "$1-$2") 
+  - o primeiro grupo sao 3 digitos seguidos de:
+  - o padrao do segundo grupo é 1 ou 2 digitos
+
+  Alternativo:
+    (/\d{3}(\d{2})/, "$1-$2") 
+
+- Limitando o tamanho da string do cpf
+(/-\d{2})\d+?$/, "$1") 
+
+Procura o padrao de: '-' + dois digitos seguido 
+de qualquer digito 
+ + - procura na string ao menos 1 digito
+ ? - procura na string que contenha 0 ou 1 ocorrencias de 1 digito
+ $ - procura 1 digito no final da string
+
+ Referencia Quantifiers
+ https://www.w3schools.com/jsref/jsref_obj_regexp.asp
